@@ -1,0 +1,16 @@
+ver 04 
+{ 
+lang VHDL 
+dflt_n wekker_arch 
+sts SUCMP 
+vendor visual_hdl 
+VHDL93 TRUE 
+time 1599146738 0 
+{ 
+obj VARCHOBJECT wekker_arch wekker_arch 
+sts NOCMP 
+vendor visual_hdl 
+VHDL93 FALSE 
+} 
+} 
+ve_gr_vrsn VE_MGC    4.4 

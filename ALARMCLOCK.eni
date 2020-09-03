@@ -1,0 +1,129 @@
+03.00 00 2C 
+@@VE@00000@@ 
+@@VE@names@@ 
+@@VE@00000@@ 
+@@VE@intfc@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@__tps@@ 
+@@VE@_uses@@ 
+@@VE@00000@@ 
+@@VE@_gens@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@u_chs@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@@VE@00000@@ 
+@^@VE_hdr_end@^@ 
+
+@@VE@names@@ 0 23 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 !
+
+@@VE@intfc@@ 11 
+{ @pdecl { { @n Alarm @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Snooze @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Minute @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Hour @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Clock @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Dselect @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Adjust @t std_logic_vector @bnd { @cnt 1 { @f 1
+@d downto @t 0
+@type { @tyn natural
+@unn Standard
+@lbn std
+@lan VHDL
+} } } @das -
+@nregout @skind
+none @block -
+} @md in @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Buzz @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md out @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n led @t std_logic @bnd -
+@das -
+@nregout @skind
+none @block -
+} @md out @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Display_data @t std_logic_vector @bnd { @cnt 1 { @f 3
+@d downto @t 0
+@type { @tyn natural
+@unn Standard
+@lbn std
+@lan VHDL
+} } } @das -
+@nregout @skind
+none @block -
+} @md out @iv -
+} @gr DEF @idx -1 } { @pdecl { { @n Display_select @t std_logic_vector @bnd { @cnt 1 { @f 3
+@d downto @t 0
+@type { @tyn natural
+@unn Standard
+@lbn std
+@lan VHDL
+} } } @das -
+@nregout @skind
+none @block -
+} @md out @iv -
+} @gr DEF @idx -1 } L { @bl 17 @el 20 @il 21 @nvis } !
+
+@@VE@__tps@@ { } 
+@@VE@_uses@@ 1 ieee.STD_LOGIC_1164   
+L { @nvis } !
+
+@@VE@_gens@@ 0 L { @nvis @ctorsn 1 } !
+
+@@VE@u_chs@@ 3 
