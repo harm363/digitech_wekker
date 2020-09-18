@@ -19,7 +19,7 @@ signal counter_hours, wake_hours: integer range 0 to 4; --only 5 bits needed for
 signal display_1, display_2, display_3, display_4: integer range 3 to 0; --only 4 bits per display are needed.
     begin        
 -- counter process, this process calculates the new time on every clocksignal    
-    process(clock, counter_secs, counter_mins, counter_hours ) 
+    process(clock, counter_secs, counter_mins, counter_hours, Adjust ) 
         begin
         if rising_edge(clock) then
             counter_secs <= counter_secs +1;
@@ -33,6 +33,11 @@ signal display_1, display_2, display_3, display_4: integer range 3 to 0; --only 
                         counter_hours <=0;
                     end if;               
                 end if;
+            end if;
+            if(Adjust /= "00") then
+              LED <= LED xor '1';
+            else
+              LED <= '0';
             end if;
         end if;
     end process;
@@ -50,24 +55,33 @@ signal display_1, display_2, display_3, display_4: integer range 3 to 0; --only 
             --add logic for displaydata
            case Display_select is
             when "0111" =>
-                Display_data := display_1;
+                Display_data <= display_1;
             when "1011"=>
-              Display_data := display_2;
+              Display_data <= display_2;
             when "1101" =>
-              Display_data := display_3;
+              Display_data <= display_3;
             when "1110" =>
-              Display_data := display_4;
+              Display_data <= display_4;
            end case;
         end if;
     end process;
 
 --this is the main process
-process (Adjust, counter_secs, counter_mins, counter_hours )
+0process (Adjust, counter_secs, counter_mins, counter_hours )
 begin
-  if (Adjust == "00") then
-    if (counter_secs > 10) then
-    display_1 := counter_secs-10
-  
-  
-end process
-  
+  --start with display setup
+  --if adjust is 01 the wake time is to be showed, else the current time
+  if (Adjust = "01" ) then
+    display_2 <= wake_mins/10;
+    display_1 <= wake_mins-display_2;
+    display_4 <= wake_hours/10;
+    display_3 <= wake_hours-display_4;
+  else
+    display_2 <= counter_mins/
+    display_1 <= counter_mins-display_2;
+    display_4 <= counter_hours/10;
+    display_3 <= counter_hours-display_4;
+  end if;
+end process;
+end;
+
