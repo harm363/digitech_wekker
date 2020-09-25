@@ -67,7 +67,7 @@ signal display_1, display_2, display_3, display_4: integer range 3 to 0; --only 
     end process;
 
 --this is the main process
-0process (Adjust, counter_secs, counter_mins, counter_hours )
+process (Adjust, counter_secs, counter_mins, counter_hours )
 begin
   --start with display setup
   --if adjust is 01 the wake time is to be showed, else the current time
@@ -82,6 +82,9 @@ begin
     display_4 <= counter_hours/10;
     display_3 <= counter_hours-display_4;
   end if;
+
+  
 end process;
-end;
+
+end architecture;
 
