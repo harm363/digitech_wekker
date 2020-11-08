@@ -9,4 +9,14 @@ architecture test of wekker_tb is
          Display_data, Display_select: out std_logic_vector(3 downto 0));
   end component;
   
+begin
+  
+  master_clck: process is
+  begin
+    Clock <= '1';
+    wait for 100ns;
+    Clock <= '0';
+    wait for 100ns;
+  end process;
+
   
