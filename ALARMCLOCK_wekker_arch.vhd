@@ -48,7 +48,7 @@ signal display_1, display_2, display_3, display_4: integer range 3 to 0; --only 
     process(Dselect, Adjust, Display_select, Display_data,display_1, display_2, display_3, display_4)
     --this process switches displays
     begin
-        --TODO give Display select an initial value to be able to rotate here
+        
       if rising_edge(Dselect) then
             --first turn dispplays off
             --then switch display and show data

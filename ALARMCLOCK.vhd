@@ -17,6 +17,7 @@ entity  ALARMCLOCK  is
     port( Alarm, Snooze, Minute, Hour, Clock, Dselect: in std_logic;
          Adjust: in std_logic_vector(1 downto 0);
          Buzz, led: out std_logic;
-         Display_data, Display_select: out std_logic_vector(3 downto 0));
+         Display_data:out std_logic_vector(3 downto 0);
+         Display_select: out std_logic_vector(3 downto 0) := "1101" );
     
 end ALARMCLOCK;
