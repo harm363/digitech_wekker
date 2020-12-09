@@ -1,0 +1,8 @@
+v 4
+file . "wekker_tb.vhdl" "0209107cda6a05603caba579311edcf1c190b882" "20201209174739.214":
+  entity wekker_tb at 1( 0) + 0 on 39;
+  architecture test of wekker_tb at 7( 80) + 0 on 40;
+file . "ALARMCLOCK_wekker_arch.vhd" "57af86668566611b1a0b96105c9a05b9eb8cdc15" "20200918074515.080":
+  architecture wekker_arch of alarmclock at 12( 279) + 0 on 4;
+file . "ALARMCLOCK.vhd" "50f7a0458b806666bf78caf703c388ce52a3e8ce" "20201209175218.871":
+  entity alarmclock at 13( 339) + 0 on 42;
