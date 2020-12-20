@@ -1,5 +1,0 @@
-v 4
-file "/home/harm/server/school/jaar4/digitale_techniek/wekker/digitech_wekker/" "ALARMCLOCK.vhd" "50f7a0458b806666bf78caf703c388ce52a3e8ce" "20201209175527.950":
-  entity alarmclock at 13( 339) + 0 on 4;
-file "/home/harm/server/school/jaar4/digitale_techniek/wekker/digitech_wekker/" "ALARMCLOCK_wekker_arch.vhd" "8fc4243dcd90d8a72e2ebcecd2465f402e30bb07" "20201209175527.953":
-  architecture wekker_arch of alarmclock at 12( 280) + 0 on 4;
